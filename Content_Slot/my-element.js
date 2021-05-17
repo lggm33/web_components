@@ -7,10 +7,9 @@ class myElement extends HTMLElement {
         const template = document.createElement('template')
         template.innerHTML=`
         <section>
-            <h2>Hola mundo</h2>
-            <div>
-                <p>Soy más texto de ejemplo</p>
-            </div>
+            <h2>
+                <slot></slot>
+            </h2>
         </section>
         ${this.getStyle()}
         `
